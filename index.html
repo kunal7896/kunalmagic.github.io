@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Tranning</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Contact </a></li>
+        </ul>
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo">Your Logo</h2>
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <video src="video/bg.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Be Strong</h2>
+            <h3>Never Giveup</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt officiis veritatis quam animi? 
+                Ipsam saepe, itaque iure doloribus non, sapiente assumenda tenetur illo omnis minima nulla nisi vitae 
+                totam dicta architecto nobis.
+            </p>
+            <a href="#">Join Us</a>
+        </div>
+    </section>
+    <script type="text/javascript">
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var banner = document.querySelector('.banner');
+        menuToggle.classList.toggle('active'); 
+        banner.classList.toggle('active');
+
+    }
+    </script>
+</body>
+</html>
